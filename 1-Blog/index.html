@@ -18,23 +18,25 @@
 				</ul>
 				<form action="/search" method="get">
 					<img src="./img/search.svg" alt="Иконка поиска" class="nav-search_img" />
-					<form action="#">
-						<input type="search" name="nav-search" id="nav-search" placeholder="Поиск" />
-					</form>
+					<input type="search" name="nav-search" id="nav-search" placeholder="Поиск" />
+					<input type="submit" value="Поиск" style="display: none" />
 				</form>
 			</nav>
 		</header>
 		<main class="main">
 			<article>
-				<span>FRONTEND</span>
-				<span>12 мая 2024</span>
+				<div class="article-info">
+					<span>FRONTEND</span>
+					<time>12 мая 2024</time>
+				</div>
 				<h1 class="title">Теория цвета - Как цвет влияет на поведение потребителей</h1>
-				<img src="./img/author.jpg" alt="Автор Статьи - Наталья Васильева" class="author-img" />
-				<p class="author-name">Наталья Васильева</p>
-				<span class="author-post">Разработчик</span>
-				<figure>
-					<img src="./img/blog_img1.jpg" alt="Изображение IMac" />
-				</figure>
+				<div class="author-info">
+					<img src="./img/author.jpg" alt="Автор Статьи - Наталья Васильева" class="author-img" />
+					<span class="author-name">Наталья Васильева</span>
+					<span class="author-post">Разработчик</span>
+				</div>
+
+				<img src="./img/blog_img1.jpg" alt="Изображение IMac" />
 
 				<section class="main-text">
 					<p>
