@@ -1,3 +1,12 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	opacity: 0.6;
+}
 body {
 	background: linear-gradient(180deg, #374151 0%, #111827 100%);
 	font-family: 'Roboto', sans-serif;
@@ -5,22 +14,27 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 }
-
+.header {
+	padding: 72px 180px 0px;
+	margin-bottom: 80px;
+}
 .header-nav ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 .header-nav a {
 	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
 }
-
 #nav-search {
 	border-radius: 100px;
 	background: rgba(31, 41, 55, 0.6);
 	color: #fff;
 	font-size: 16px;
 	border: none;
+	padding: 9px 50px 12px;
 }
 
 #nav-search::placeholder {
@@ -29,17 +43,28 @@ body {
 	opacity: 0.6;
 }
 
+.main {
+	margin-bottom: 90px;
+}
 .article-info {
 	font-size: 14px;
 	color: #fff;
 	opacity: 0.6;
+	margin-bottom: 14px;
 }
 
 h1 {
 	font-size: 24px;
 	line-height: 38px;
+	margin-bottom: 30px;
+}
+.author-info {
+	margin-bottom: 28px;
 }
 
+.author-info + img {
+	margin-bottom: 69px;
+}
 .author-name {
 	line-height: 28px;
 }
@@ -55,12 +80,16 @@ h1 {
 	line-height: 30px;
 	color: #fff;
 }
-
+.main-text p {
+	margin-bottom: 38px;
+}
 .main-text p:first-child {
 	font-size: 20px;
 	line-height: 32px;
 }
-
+.main-text p:last-child {
+	margin-bottom: 0;
+}
 .footer span {
 	opacity: 0.6;
 	line-height: 28px;
