@@ -90,6 +90,9 @@ h1 {
 .main-text p:last-child {
 	margin-bottom: 0;
 }
+.footer {
+	margin-bottom: 77px;
+}
 .footer span {
 	opacity: 0.6;
 	line-height: 28px;
