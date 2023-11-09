@@ -1,0 +1,66 @@
+html {
+	background: linear-gradient(180deg, #374151 0%, #111827 100%);
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+.header-nav ul {
+	list-style: none;
+}
+.header-nav a {
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+}
+
+#nav-search {
+	border-radius: 100px;
+	background: rgba(31, 41, 55, 0.6);
+	color: #fff;
+	font-size: 16px;
+	border: none;
+}
+
+#nav-search::placeholder {
+	color: #fff;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+.article-info {
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.6;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+}
+
+.author-name {
+	line-height: 28px;
+}
+
+.author-post {
+	font-size: 14px;
+	line-height: 28px;
+	opacity: 0.6;
+}
+.main-text p,
+.main-text a {
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+}
+
+#main-text_bold {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.footer span {
+	opacity: 0.6;
+	line-height: 28px;
+}
