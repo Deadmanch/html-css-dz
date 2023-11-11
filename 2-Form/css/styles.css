@@ -5,8 +5,9 @@ html {
 }
 
 main {
-	width: 582px;
-	height: 573px;
+	width: 100%;
+	max-width: 582px;
+	min-height: 573px;
 	border-radius: 10px;
 	background: #fffefe;
 
