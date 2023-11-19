@@ -1,28 +1,43 @@
+* {
+	box-sizing: border-box;
+}
 html {
-	background: linear-gradient(243deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
-		linear-gradient(243deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%), #f39494;
 	font-family: 'Open Sans', sans-serif;
 }
-
+body {
+	background: linear-gradient(243deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
+		linear-gradient(243deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%), #f39494;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 20px);
+}
 main {
 	width: 100%;
 	max-width: 582px;
 	min-height: 573px;
 	border-radius: 10px;
 	background: #fffefe;
-
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	margin: 0 auto;
-	text-align: center;
+	padding: 72px 93px 91px;
 }
-
+.form-title {
+	text-align: center;
+	margin-bottom: 47px;
+}
 h2 {
 	color: #333;
 	font-size: 36px;
 	font-weight: 700;
+	margin: 0 0 8px 0;
+	text-align: center;
 }
 
-span {
+.form-title span {
 	color: #666;
 	font-size: 18px;
 	font-weight: 400;
@@ -33,31 +48,75 @@ a {
 	font-size: 18px;
 	font-weight: 400;
 	text-decoration-line: underline;
+	transition: color 0.5s;
+}
+a:hover,
+a:focus {
+	color: #056a96;
+}
+.container-form {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
 }
 
-input {
+.userInfo-container {
+	display: flex;
+	gap: 1px;
+}
+#userName {
+	border-radius: 5px 0 0 5px;
+}
+#userSurname {
+	border-radius: 0 5px 5px 0;
+}
+input[type]:not([type='checkbox']) {
 	color: #333;
 	font-size: 16px;
 	font-weight: 600;
 	border-radius: 5px;
 	border: 1px solid #f5f5f5;
-	background: #fff;
+	background-color: #ffffff;
+	padding: 9px 11px;
+	width: 100%;
 }
-
-input::placeholder {
+input[type]:not([type='checkbox']):placeholder-shown {
+	background-color: #f5f5f5;
 	color: #999;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: 400;
-	background: #f5f5f5;
+	width: 100%;
 }
-
+input[type='checkbox'] {
+	cursor: pointer;
+}
 button {
 	border-radius: 5px;
 	background: #089fe0;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 400;
+	padding: 9px 0px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	transition: background 0.5s;
+}
+
+button:hover,
+button:focus {
+	background: #0673a2;
+}
+button::after {
+	content: url(../img/arrow.svg);
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 7px;
+	right: 40px;
 }
 
 label {
