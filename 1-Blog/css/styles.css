@@ -88,14 +88,10 @@ body {
 	margin-right: 20px;
 }
 .article-info span::after {
-	content: '';
+	content: '\00B7';
 	position: absolute;
-	top: 6px;
-	right: -15px;
-	height: 4px;
-	width: 4px;
-	border-radius: 100%;
-	background: rgba(255, 255, 255, 0.6);
+	right: -12px;
+	font-size: 14px;
 }
 h1 {
 	font-size: 24px;

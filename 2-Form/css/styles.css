@@ -76,15 +76,17 @@ input[type]:not([type='checkbox']) {
 	font-weight: 600;
 	border-radius: 5px;
 	border: 1px solid #f5f5f5;
-	background: #f5f5f5;
+	background-color: #ffffff;
 	padding: 9px 11px;
 	width: 100%;
 }
-input::placeholder {
+input[type]:not([type='checkbox']):placeholder-shown {
+	background-color: #f5f5f5;
 	color: #999;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: 400;
+	width: 100%;
 }
 input[type='checkbox'] {
 	cursor: pointer;
@@ -95,7 +97,7 @@ button {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 400;
-	padding: 9px;
+	padding: 9px 0px;
 	width: 100%;
 	border: none;
 	text-align: center;
