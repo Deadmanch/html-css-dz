@@ -7,6 +7,7 @@
 	line-height: 140%;
 	padding: 12px 32px;
 	transition: background-color var(--transition);
+	display: inline-block;
 }
 
 .button_primary {
@@ -18,3 +19,21 @@
 .button_primary:hover {
 	background-color: var(--color-links);
 }
+
+/** Section */
+.section_crop {
+	background: var(--color-primary);
+}
+/*
+.section_crop::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	clip-path: polygon(0px 85%, 100% 50%, 100% 101%, 0% 101%);
+	background: var(--color-main);
+}
+*/
