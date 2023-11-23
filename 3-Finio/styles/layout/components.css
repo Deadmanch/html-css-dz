@@ -8,6 +8,7 @@
 	padding: 12px 32px;
 	transition: background-color var(--transition);
 	display: inline-block;
+	cursor: pointer;
 }
 
 .button_primary {
@@ -29,7 +30,7 @@
 .container.hr::after {
 	content: '';
 	position: absolute;
-	height: 10px;
+	height: 1px;
 	background-color: var(--color-hr);
 	width: calc(100% - 48px);
 	bottom: 0;
@@ -42,8 +43,10 @@
 	}
 }
 /** Section */
-.section_crop {
+.section_primary {
 	background: var(--color-primary);
+}
+.section_crop {
 	position: relative;
 	z-index: 0;
 }
@@ -96,7 +99,10 @@
 	.advantages__wrapper,
 	.advantages__wrapper.advantages__wrapper_reverse {
 		flex-direction: column-reverse;
-		text-align: center;
+		text-align: flex-start;
+	}
+	.advantages__right {
+		margin-bottom: 32px;
 	}
 }
 @media (max-width: 960px) {

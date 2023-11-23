@@ -85,3 +85,91 @@
 		}
 	}
 }
+
+/** Comparsion */
+.comparsion {
+	text-align: center;
+}
+.comparsion__title {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 120%;
+	color: var(--color-main);
+	margin-bottom: 24px;
+}
+.comparsion__paragraph {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 140%;
+	color: var(--color-links);
+	margin-bottom: 40px;
+}
+
+.comparsion__button {
+	margin-bottom: 64px;
+}
+.comparsion__img {
+	margin-bottom: 64px;
+}
+.comparsion__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: start;
+	gap: 70px;
+}
+.comparsion__list > ul {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.comparsion__list > ul > li::before {
+	position: absolute;
+	content: url(../img/ul-list/check-circle.svg);
+	margin-right: 8px;
+	top: 0;
+	left: -35px;
+}
+.comparsion__list_exclamations > ul > li::before {
+	content: url(../img/ul-list/exclamation-circle.svg);
+}
+.list__tile {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 120%;
+	color: var(--color-main);
+	margin-bottom: 24px;
+}
+
+.list__item {
+	position: relative;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 140%;
+	color: var(--color-links);
+	margin-left: 30px;
+}
+
+@media (max-width: 960px) {
+	.comparsion__title {
+		font-size: 36px;
+		text-align: start;
+	}
+	.comparsion__paragraph {
+		margin-bottom: 32px;
+		text-align: start;
+	}
+	.comparsion__button {
+		margin-bottom: 48px;
+		font-size: 17px;
+	}
+	.comparsion__img {
+		margin-bottom: 54px;
+	}
+}
+@media (max-width: 650px) {
+	.comparsion__wrapper {
+		flex-direction: column;
+		gap: 48px;
+	}
+}
