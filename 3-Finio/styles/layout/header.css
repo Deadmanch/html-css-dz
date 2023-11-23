@@ -10,6 +10,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 24px 19px;
+	position: relative;
 }
 .header__mobile-menu-btn {
 	display: none;
@@ -26,8 +27,15 @@
 		display: none;
 	}
 
-	.header__wrapper {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+	.header__wrapper::after {
+		content: '';
+		position: absolute;
+		height: 1px;
+		background-color: var(--color-main);
+		width: calc(100% - 48px);
+		bottom: 0;
+		right: 24px;
+		left: 24px;
 	}
 }
 /* Menu */
