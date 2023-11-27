@@ -87,17 +87,17 @@
 }
 
 /** Comparsion */
-.comparsion {
+.comparison {
 	text-align: center;
 }
-.comparsion__title {
+.comparison__title {
 	font-size: 48px;
 	font-weight: 600;
 	line-height: 120%;
 	color: var(--color-main);
 	margin-bottom: 24px;
 }
-.comparsion__paragraph {
+.comparison__paragraph {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 140%;
@@ -105,32 +105,32 @@
 	margin-bottom: 40px;
 }
 
-.comparsion__button {
+.comparison__button {
 	margin-bottom: 64px;
 }
-.comparsion__img {
+.comparison__img {
 	margin-bottom: 64px;
 }
-.comparsion__wrapper {
+.comparison__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	text-align: start;
 	gap: 70px;
 }
-.comparsion__list > ul {
+.comparison__list > ul {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
 }
-.comparsion__list > ul > li::before {
+.comparison__list > ul > li::before {
 	position: absolute;
 	content: url(../img/ul-list/check-circle.svg);
 	margin-right: 8px;
 	top: 0;
 	left: -35px;
 }
-.comparsion__list_exclamations > ul > li::before {
+.comparison__list_exclamations > ul > li::before {
 	content: url(../img/ul-list/exclamation-circle.svg);
 }
 .list__tile {
@@ -151,25 +151,65 @@
 }
 
 @media (max-width: 960px) {
-	.comparsion__title {
+	.comparison__title {
 		font-size: 36px;
 		text-align: start;
 	}
-	.comparsion__paragraph {
+	.comparison__paragraph {
 		margin-bottom: 32px;
 		text-align: start;
 	}
-	.comparsion__button {
+	.comparison__button {
 		margin-bottom: 48px;
 		font-size: 17px;
 	}
-	.comparsion__img {
+	.comparison__img {
 		margin-bottom: 54px;
 	}
 }
 @media (max-width: 650px) {
-	.comparsion__wrapper {
+	.comparison__wrapper {
 		flex-direction: column;
 		gap: 48px;
+	}
+}
+
+/** Mobile section */
+.mobile {
+	text-align: center;
+}
+.mobile__header {
+	color: var(--color-headings);
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 120%;
+	margin-bottom: 24px;
+}
+
+.mobile__text {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 140%;
+	color: var(--color-text);
+	margin-bottom: 40px;
+}
+
+@media (max-width: 960px) {
+	.mobile {
+		text-align: start;
+	}
+	.mobile__header {
+		font-size: 36px;
+	}
+	.mobile__text {
+		margin-bottom: 32px;
+	}
+
+	.container-img {
+		width: 680px;
+		overflow: hidden;
+	}
+	.mobile__img {
+		width: 100%;
 	}
 }
