@@ -184,11 +184,12 @@
 	.mobile__text {
 		margin-bottom: 32px;
 	}
-
+	/*
 	.container-img {
 		width: 680px;
 		overflow: hidden;
 	}
+	*/
 	.mobile__img {
 		width: 100%;
 	}
