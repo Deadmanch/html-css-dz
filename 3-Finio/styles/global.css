@@ -3,14 +3,17 @@
 
 	--color-main: #ffffff;
 	--color-primary: #357efe;
+	--color-primary-hover: #0460fe;
 	--color-secondary: #ffc736;
 	--color-text-light: #4e5d7c;
 	--color-headings: #000000;
 	--color-text: rgba(78, 93, 124, 0.5);
+	--color-footer-links: rgba(255, 255, 255, 0.5);
 	--color-links: rgba(255, 255, 255, 0.8);
 	--color-opacity-0-7: rgba(255, 255, 255, 0.7);
 	--color-discont: #1abc9c;
 	--color-hr: rgba(78, 93, 124, 0.08);
+	--color-bg-footer: #1a1d25;
 	/** Border */
 	--border-8: 8px;
 	--border-34: 34px;
